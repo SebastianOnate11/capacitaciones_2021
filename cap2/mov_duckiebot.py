@@ -44,7 +44,7 @@ env.reset()
 
 
 while True:
-
+    # Para ver si funciona 
     # Captura la tecla que está siendo apretada y almacena su valor en key
     key = cv2.waitKey(30)
 
