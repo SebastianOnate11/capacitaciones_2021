@@ -64,7 +64,33 @@ while True:
         action = np.array([0.44, 0.0])
 
     ### AGREGAR MÁS COMPORTAMIENTOS ###
+    # Al apretar la tecla 'a' el duckiebot gira exclusivamente hacia la izquierda
+    if key == ord('a'):
+        action = np.array([0, 0.44])
+    
+    # Al apretar la tecla 'd' el duckiebot gira exclusivamente hacia la derecha
+    if key == ord('d'):
+        action = np.array([0, -0.44])
 
+    # Al apretar la tecla 'e' el duckiebot avanzara hacia adelante mientras gira hacia la izquierda
+    if key == ord('e'):
+        action = np.array([0.22, -0.44])
+    
+    # Al apretar la tecla 'q' el duckiebot avanzara hacia adelante mientras gira hacia la derecha
+    if key == ord('q'):
+        action = np.array([0.22, 0.44])
+    
+    # Al apretar la tecla 's' el duckiebot se movera hacia atras
+    if key == ord('s'):
+        action = np.array([-0.30, 0])
+    
+    # Al apretar la tecla 'z' el duckiebot se movera hacia atras mientras gira a la izquierda
+    if key == ord('z'):
+        action = np.array([-0.22, -0.44])
+    
+    # Al apretar la tecla 'c' el duckiebot se movera hacia atras mientras gira hacia la derecha
+    if key == ord('c'):
+        action = np.array([-0.22, 0.44])
 
 
     # Se ejecuta la acción definida anteriormente y se retorna la observación (obs),
